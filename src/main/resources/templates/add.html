@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户修改</title>
+</head>
+<body>
+<center>
+<h3 th:text="${msg}" style="color: red">个人信息添加表</h3>
+      <form method="post" action="add">
+           请输入用户名称:     <input type="text" name="name"><br/>
+           请输入用户姓名:     <input type="text" name="name1"><br/>
+           请输入用户年龄:     <input type="text" name="age"><br/>
+           请选择用户性别:     <input type="text" name="sex"><br/>
+           请输入用户学历:     <input type="text" name="education"><br/>
+           请输入用户联系方式:  <input type="text" name="phonenumber"><br/>
+           请输入用户毕业院校:  <input type="text" name="scholl"><br/>
+           请输入用户专业方向:  <input type="text" name="professional"><br/>
+       <input type="submit" value="注册">   <input type="reset" value="重置"><br/>
+          <a href="/main1">返回页面</a>
+</form>
+</body>
+</html>

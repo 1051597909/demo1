@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxh.mapper.userMapper">
+    <select id="findByName"   parameterType="String" resultType="com.lxh.bean.user">
+        select * from user where name = #{name}
+    </select>
+
+    <select id="findByid"   parameterType="int" resultType="com.lxh.bean.user">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="insertuser"   parameterType="com.lxh.bean.user">
+        insert into user(id,name,password) values (#{id},#{name},#{password})
+    </insert>
+</mapper>
